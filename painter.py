@@ -16,19 +16,13 @@ DEFAULT_THEME = {
 # For example, to replace the global-radii-blocks field, call this function like this:
 # _R('global-radii-blocks', '0.4em')
 def _R(css, field_name, value):
-  #regex = r'(.*:\s*)(.*)(\s*/\*{%s}\*/)' % field_name
-  regex = r'\s*([^\s]*)(\s*/\*{%s}\*/)' % field_name
-  print "Replacing field", field_name, "with", value
-  #print regex
-  #print re.findall(regex, css)
-  #import pdb
-  #pdb.set_trace()
-  return re.sub(regex, r'' + value + '\g<2>', css)
+  regex = r'(\s*)([^\s]*)(\s*/\*{%s}\*/)' % field_name
+  #print "Replacing field", field_name, "with", value
+  return re.sub(regex, r'\g<1>' + value + '\g<3>', css)
 
-def normalize(theme_css):
-  theme_css = _R(theme_css, 'global-radii-blocks', '0.1em')
-  theme_css = _R(theme_css, 'global-radii-buttons', '0.1em')
-
+def make_theme(props, theme_css):
+  for prop in props:
+    theme_css = _R(theme_css, prop, props[prop])
   return theme_css
 
 def save_css(name, theme_css, jqm_version=CURRENT_JQM_VERSION):
@@ -44,20 +38,23 @@ def save_css(name, theme_css, jqm_version=CURRENT_JQM_VERSION):
 
   shutil.copy('res/index.html', d)
 
-def gen_theme(name, base_hex, light_hex, jqm_version=CURRENT_JQM_VERSION):
-  print "Generating theme", base_hex, jqm_version
+  images_dir = os.path.join(d, 'images/')
+  if not os.path.exists(images_dir):
+    shutil.copytree('res/jqm/%s/images' % jqm_version, images_dir)
 
-  if not base_hex[0] == '#':
-    base_hex = '#' + base_hex
-  if not light_hex[0] == '#':
-    light_hex = '#' + light_hex
+def gen_theme(settings_file):
+  stream = open(settings_file, 'r')
+  import yaml
+  settings = yaml.load(stream)
 
-  theme_css = open('res/jqm/%s/jquery.mobile-%s.css' % (jqm_version, jqm_version), 'r').read()
+  print "Generating theme", settings['name']
 
-  theme_css = normalize(theme_css)
-  
-  theme_css = _R(theme_css, 'a-bar-background-end', base_hex)
-  theme_css = _R(theme_css, 'a-bar-background-start', light_hex)
+  name = settings['name']
+  jqm_version = settings['jqm-version']
+
+  theme_css = open(settings['source-theme'], 'r').read()
+
+  theme_css = make_theme(settings, theme_css)
 
   save_css(name, theme_css, jqm_version)
 
@@ -65,7 +62,7 @@ def gen_theme(name, base_hex, light_hex, jqm_version=CURRENT_JQM_VERSION):
 
 
 if __name__ == "__main__":
-  if len(sys.argv) < 4:
-    print >> sys.stderr, "Usage: painter.py name baseColorHex lightColorHex"
+  if len(sys.argv) < 2:
+    print >> sys.stderr, "Usage: painter.py yaml-settings-file"
     sys.exit(1)
-  gen_theme(sys.argv[1], sys.argv[2], sys.argv[3])
+  gen_theme(sys.argv[1])
