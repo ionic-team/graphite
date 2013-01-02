@@ -9,6 +9,11 @@ name: blue
 'global-box-shadow-size': '1px'
 'global-box-shadow-color': 'rgba(0,0,0,0.2)'
 
+# Pages
+'c-body-background-color': '#eee'
+'c-body-background-start': '#eee'
+'c-body-background-end': '#eee'
+
 # Toolbars
 'a-bar-border': 'transparent'
 'b-bar-border': 'transparent'

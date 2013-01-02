@@ -1738,7 +1738,7 @@ div.ui-mobile-viewport { overflow-x: hidden; }
 .ui-navbar ul:before, .ui-navbar ul:after { content: " "; display: table; }
 .ui-navbar ul:after { clear: both; }
 .ui-navbar ul { list-style:none; margin: 0; padding: 0; position: relative; display: block; border: 0; max-width: 100%; overflow: visible; zoom: 1; }
-.ui-navbar li .ui-btn { display: block; text-align: center; margin: 0 -1px 0 0; border-right-width: 0; }
+.ui-navbar li .ui-btn { display: block; text-align: center; margin: -1px -1px -1px 0; border-right-width: 0; }
 .ui-navbar li .ui-btn-icon-right .ui-icon { right: 6px; }
 /* add border if not in header/footer (full width) */
 .ui-navbar li:last-child .ui-btn,
@@ -2310,4 +2310,21 @@ span.ui-slider-label-b { z-index: 0; right: 0; text-indent: 1.5em;}
   .ui-btn-hover-a .ui-icon {
     background-image: url(images/icons-36-white.png) /*{global-icon-set}*/;
   }
+}
+
+/* 
+  I wanted the ability to change buttons in the header.
+  This theme flips the start and end points for the gradients
+*/
+.ui-header > .ui-btn-up-a, .ui-footer > .ui-btn-up-a {
+	border: 1px solid 		#000 /*{a-bhover-border}*/;
+	background: 			#444 /*{a-bhover-background-color}*/;
+	font-weight: bold;
+	color: 					#fff /*{a-bhover-color}*/;
+	background-image: -webkit-gradient(linear, left top, left bottom, from( #555 /*{a-bhover-background-start}*/), to( #383838 /*{a-bhover-background-end}*/)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient( #555 /*{a-bhover-background-start}*/, #383838 /*{a-bhover-background-end}*/); /* Chrome 10+, Saf5.1+ */
+	background-image:    -moz-linear-gradient( #555 /*{a-bhover-background-start}*/, #383838 /*{a-bhover-background-end}*/); /* FF3.6 */
+	background-image:     -ms-linear-gradient( #555 /*{a-bhover-background-start}*/, #383838 /*{a-bhover-background-end}*/); /* IE10 */
+	background-image:      -o-linear-gradient( #555 /*{a-bhover-background-start}*/, #383838 /*{a-bhover-background-end}*/); /* Opera 11.10+ */
+	background-image:         linear-gradient( #555 /*{a-bhover-background-start}*/, #383838 /*{a-bhover-background-end}*/);
 }
