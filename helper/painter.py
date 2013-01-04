@@ -56,6 +56,10 @@ def gen_theme(settings_file):
 
   theme_css = make_theme(settings, theme_css)
 
+  if 'extra-css' in settings:
+    extra_css = open(settings['extra-css'], 'r').read()
+    theme_css += extra_css
+
   save_css(name, theme_css, jqm_version)
 
   # Replace the bar color and highlight colors

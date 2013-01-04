@@ -27,9 +27,12 @@ name: candy
 
 # Typography
 'c-body-link-color': '#f75548'
+'c-body-link-hover': '#ff6b5f'
 'c-body-link-visited': '#ff6b5f'
+'c-body-link-active': '#ff6b5f'
 
 # Buttons
+'global-active-background-color': '#ff6b5f'
 'global-active-background-start': '#ff6b5f'
 'global-active-background-end': '#ff6b5f'
 'global-active-border': '#f75548'

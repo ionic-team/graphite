@@ -27,9 +27,12 @@ name: blue
 
 # Typography
 'c-body-link-color': '#007dcd'
+'c-body-link-hover': '#0193e9'
 'c-body-link-visited': '#0193e9'
+'c-body-link-active': '#0193e9'
 
 # Buttons
+'global-active-background-color': '#0193e9'
 'global-active-background-start': '#0193e9'
 'global-active-background-end': '#0193e9'
 'global-active-border': '#007dcd'
