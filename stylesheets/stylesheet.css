@@ -221,6 +221,7 @@ ul.swatches label {
   display: inline-block;
   border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0,0,0,.3);
+  cursor: pointer;
   width: 40px;
   height: 40px;
   margin: 0 14px;
@@ -251,4 +252,5 @@ label.sand { background-color: #cab092; }
   height: 548px;
   top: 140px;
   left: 204px;
+  overflow: hidden;
 }
