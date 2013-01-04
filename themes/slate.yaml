@@ -1,7 +1,7 @@
 # Meta
-name: coal
+name: slate
 'source-theme': 'res/jqm/1.2.0/jquery.mobile-1.2.0.graphite.blue.css'
-'extra-css': 'themes/coal.custom.css'
+'extra-css': 'themes/slate.custom.css'
 'jqm-version': '1.2.0'
 'use_base': 'false'
 
