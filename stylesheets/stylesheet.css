@@ -181,6 +181,8 @@ Full-Width Styles
 
 #header_wrap {
   background: #212121 url(../images/header_texture.jpg);
+  padding-top: 20px;
+  margin-bottom: 20px;
 }
 
 #project_tagline {
@@ -192,6 +194,10 @@ Full-Width Styles
 
 a {
   color: #60b9b4;
+}
+
+#downloads {
+  margin: 50px;
 }
 
 a.download {
@@ -207,6 +213,12 @@ a.download {
 
 a.download:hover {
   background-color: #72cec9;
+}
+
+p.subtext {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 18px;
 }
 
 ul.swatches li {
