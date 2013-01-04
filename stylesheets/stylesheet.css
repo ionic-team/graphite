@@ -226,6 +226,9 @@ ul.swatches label {
   height: 40px;
   margin: 0 14px;
 }
+ul.swatches label.selected {
+  box-shadow: 0 1px 0 #fff, inset 0 1px 3px rgba(0,0,0,.4);
+}
 
 label.coal { background-color: #222; }
 label.aloe { background-color: #aad315; }
