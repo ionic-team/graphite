@@ -5,3 +5,4 @@ name: melon
 
 base_color: &BASE_COLOR '#f8c84a'
 secondary_color: &SECONDARY_COLOR '#ffd55f'
+highlight_border_color: &HIGHLIGHT_COLOR '#005994'

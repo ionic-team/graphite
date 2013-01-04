@@ -6,3 +6,4 @@ name: aloe
 
 base_color: &BASE_COLOR '#94b913'
 secondary_color: &SECONDARY_COLOR '#abcd14'
+highlight_border_color: &HIGHLIGHT_COLOR '#005994'

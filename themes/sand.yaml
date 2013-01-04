@@ -5,3 +5,4 @@ name: sand
 
 base_color: &BASE_COLOR '#b29573'
 secondary_color: &SECONDARY_COLOR '#cbb294'
+highlight_border_color: &HIGHLIGHT_COLOR '#005994'

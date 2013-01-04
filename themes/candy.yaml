@@ -5,6 +5,7 @@ name: candy
 
 base_color: &BASE_COLOR '#f75548'
 secondary_color: &SECONDARY_COLOR '#ff6b5f'
+highlight_border_color: &HIGHLIGHT_COLOR '#005994'
 
 ## Core
 #'global-radii-blocks': '0.2em'

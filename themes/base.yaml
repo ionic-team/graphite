@@ -10,8 +10,8 @@
 'c-body-background-end': '#eee'
 
 # Toolbars
-'a-bar-border': 'transparent'
-'b-bar-border': 'transparent'
+'a-bar-border': *HIGHLIGHT_COLOR
+'b-bar-border': *HIGHLIGHT_COLOR
 'a-bar-background-end': *BASE_COLOR
 'a-bar-background-start': *SECONDARY_COLOR
 'a-bar-background-color': *SECONDARY_COLOR
