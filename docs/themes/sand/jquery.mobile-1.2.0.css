@@ -1763,8 +1763,8 @@ div.ui-mobile-viewport { overflow-x: hidden; }
 .ui-footer .ui-navbar .ui-grid-c li.ui-block-d .ui-btn-icon-right .ui-icon,
 .ui-header .ui-navbar .ui-grid-d li.ui-block-e .ui-btn-icon-right .ui-icon,
 .ui-footer .ui-navbar .ui-grid-d li.ui-block-e .ui-btn-icon-right .ui-icon { right: 8px; }
-.ui-navbar li .ui-btn .ui-btn-inner { padding-top: .7em; padding-bottom: .8em }
-.ui-navbar li .ui-btn-icon-top .ui-btn-inner { padding-top: 30px; }
+.ui-navbar li .ui-btn .ui-btn-inner { padding-top: .7em; padding-bottom: .6em }
+.ui-navbar li .ui-btn-icon-top .ui-btn-inner { padding-top: 25px; }
 .ui-navbar li .ui-btn-icon-bottom .ui-btn-inner { padding-bottom: 30px; }
 .ui-btn { display: block; text-align: center; cursor:pointer; position: relative; margin: .5em 0; padding: 0; }
 .ui-mini { margin-top: .25em; margin-bottom: .25em; }
