@@ -257,3 +257,44 @@ label.sand { background-color: #cab092; }
   left: 204px;
   overflow: hidden;
 }
+
+ol.steps {
+  margin-top: 20px;
+}
+
+ol.steps li {
+  display: inline-block;
+  width: 33%;
+  text-align: justify;
+  padding-left: 60px;
+  padding-right: 50px;
+  position: relative;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ol.steps p:before {
+  content: '';
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  background-image: url(../images/numbers_46x46.jpg);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+}
+ol.steps li:nth-child(1) p:before {
+  background-position: 0 0;
+}
+ol.steps li:nth-child(2) p:before {
+  background-position: 0 -46px;
+}
+ol.steps li:nth-child(3) p:before {
+  background-position: 0 -92px;
+}
+
+ol.steps h4 {
+  font-family: 'ProximaNova-bold';
+  vertical-align: top;
+}
