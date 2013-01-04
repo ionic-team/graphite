@@ -23,10 +23,31 @@ def _R(css, field_name, value):
   #print "Replacing field", field_name, "with", value
   return re.sub(regex, r'\g<1>' + value + '\g<3>', css)
 
+def _replace_value(props, matchobj):
+  match1 = matchobj.group(1)
+  match2 = matchobj.group(2)
+  match3 = matchobj.group(3)
+  match4 = matchobj.group(4)
+  if match4 in props:
+    v = props[match4]
+    ret = match1 + v + match3
+    #print "Ret", ret
+    return ret
+    #return r'\g<1>' + v + '\g<3>'
+
+def _RF(css, props):
+  keys = '|'.join(props.keys())
+  regex = r'(\s*)([^\s]*)(\s*/\*{(%s)}\*/)' % keys
+  return re.sub(regex, lambda matchobj: _replace_value(props, matchobj), css)
+
 def make_theme(props, theme_css):
+  return _RF(theme_css, props)
+  """
+  print keys
   for prop in props:
     theme_css = _R(theme_css, prop, props[prop])
   return theme_css
+  """
 
 def save_css(name, theme_css, jqm_version=CURRENT_JQM_VERSION):
   filename = 'generated/%s/jquery.mobile-%s.css' % (name, jqm_version)
@@ -63,7 +84,13 @@ def gen_theme(settings_file):
 
   theme_css = open(settings['source-theme'], 'r').read()
 
+  del settings['name']
+  del settings['jqm-version']
+  del settings['source-theme']
+
   theme_css = make_theme(settings, theme_css)
+
+  #print theme_css
 
   if 'extra-css' in settings:
     extra_css = open(settings['extra-css'], 'r').read()
