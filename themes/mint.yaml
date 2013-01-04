@@ -1,0 +1,7 @@
+# Meta
+name: mint
+'source-theme': 'res/jqm/1.2.0/jquery.mobile-1.2.0.graphite.blue.css'
+'jqm-version': '1.2.0'
+
+base_color: &BASE_COLOR '#72c6ae'
+secondary_color: &SECONDARY_COLOR '#9bdecc'

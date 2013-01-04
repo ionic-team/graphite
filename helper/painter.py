@@ -1,6 +1,9 @@
+import cStringIO
 import os
+import pdb
 import shutil
 import sys
+import yaml
 
 import re
 
@@ -43,9 +46,15 @@ def save_css(name, theme_css, jqm_version=CURRENT_JQM_VERSION):
     shutil.copytree('res/jqm/%s/images' % jqm_version, images_dir)
 
 def gen_theme(settings_file):
-  stream = open(settings_file, 'r')
-  import yaml
-  settings = yaml.load(stream)
+  theme_yaml = open(settings_file, 'r').read()
+  base_yaml = open('themes/base.yaml', 'r').read()
+  stream = cStringIO.StringIO(theme_yaml + '\n' + base_yaml)
+
+  theme_settings = yaml.load(theme_yaml)
+  if 'use_base' in theme_settings and theme_settings['use_base'] == 'false':
+    settings = theme_settings
+  else:
+    settings = yaml.load(stream)
 
   print "Generating theme", settings['name']
 

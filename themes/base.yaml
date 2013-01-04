@@ -1,0 +1,58 @@
+# Core
+'global-radii-blocks': '0.2em'
+'global-radii-buttons': '0.2em'
+'global-box-shadow-size': '1px'
+'global-box-shadow-color': 'rgba(0,0,0,0.2)'
+
+# Pages
+'c-body-background-color': '#eee'
+'c-body-background-start': '#eee'
+'c-body-background-end': '#eee'
+
+# Toolbars
+'a-bar-border': 'transparent'
+'b-bar-border': 'transparent'
+'a-bar-background-end': *BASE_COLOR
+'a-bar-background-start': *SECONDARY_COLOR
+'a-bar-background-color': *SECONDARY_COLOR
+'b-bar-background-end': *BASE_COLOR
+'b-bar-background-start': *SECONDARY_COLOR
+'b-bar-background-color': *SECONDARY_COLOR
+
+
+# Typography
+'c-body-link-color': *BASE_COLOR
+'c-body-link-hover': *SECONDARY_COLOR
+'c-body-link-visited': *BASE_COLOR
+'c-body-link-active': *BASE_COLOR
+
+# Buttons
+'global-active-background-color': *BASE_COLOR
+'global-active-background-start': *BASE_COLOR
+'global-active-background-end': *BASE_COLOR
+'global-active-border': *SECONDARY_COLOR
+
+'a-bup-border': '#cfcfcf'
+'a-bup-background-start': '#fff'
+'a-bup-background-end': '#fff'
+'a-bhover-background-start': *SECONDARY_COLOR
+'a-bhover-background-end': *SECONDARY_COLOR
+'a-bhover-border': *BASE_COLOR
+'a-bhover-color': '#fff'
+'a-bdown-background-start': *BASE_COLOR
+'a-bdown-background-end': *BASE_COLOR
+'a-bup-color': '#111'
+'a-bup-shadow-x': '0px'
+'a-bup-shadow-y': '0px'
+'a-bup-shadow-radius': '0px'
+
+'c-bup-background-start': '#fff'
+'c-bup-background-end': '#fff'
+'c-bhover-background-start': *SECONDARY_COLOR
+'c-bhover-background-end': *SECONDARY_COLOR
+'c-bhover-color': '#fff'
+'c-bdown-background-start': *BASE_COLOR
+'c-bdown-background-end': *BASE_COLOR
+'c-bup-shadow-x': '0px'
+'c-bup-shadow-y': '0px'
+'c-bup-shadow-radius': '0px'

@@ -3,6 +3,7 @@ name: slate
 'source-theme': 'res/jqm/1.2.0/jquery.mobile-1.2.0.graphite.blue.css'
 'extra-css': 'themes/slate.custom.css'
 'jqm-version': '1.2.0'
+'use_base': 'false'
 
 # Core
 'global-radii-blocks': '0.2em'
@@ -39,7 +40,7 @@ name: slate
 'global-active-background-end': '#222222'
 'global-active-border': '#484848'
 
-'a-bup-border': '#333333'
+'a-bup-border': '#000000'
 'a-bup-background-start': '#333333'
 'a-bup-background-end': '#333333'
 'a-bup-color': '#C4C2C2'
