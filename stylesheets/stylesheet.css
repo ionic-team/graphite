@@ -3,14 +3,14 @@ Fonts
 *******************************************************************************/
 
 /* Proxima Nova Bold */
-@font-face {font-family: 'ProximaNovaS-Bold';src: url('fonts/proxima-bold/23BAC1_0_0.eot');src: url('fonts/proxima-bold/23BAC1_0_0.eot?#iefix') format('embedded-opentype'),url('fonts/proxima-bold/23BAC1_0_0.woff') format('woff'),url('fonts/proxima-bold/23BAC1_0_0.ttf') format('truetype');}
 @font-face {font-family: 'ProximaNovaA-Bold';src: url('fonts/proxima-bold/23BAC1_1_0.eot');src: url('fonts/proxima-bold/23BAC1_1_0.eot?#iefix') format('embedded-opentype'),url('fonts/proxima-bold/23BAC1_1_0.woff') format('woff'),url('fonts/proxima-bold/23BAC1_1_0.ttf') format('truetype');}
+@font-face {font-family: 'ProximaNovaS-Bold';src: url('fonts/proxima-bold/23BAC1_0_0.eot');src: url('fonts/proxima-bold/23BAC1_0_0.eot?#iefix') format('embedded-opentype'),url('fonts/proxima-bold/23BAC1_0_0.woff') format('woff'),url('fonts/proxima-bold/23BAC1_0_0.ttf') format('truetype');}
 @font-face {font-family: 'ProximaNova-Bold';src: url('fonts/proxima-bold/23BAC1_2_0.eot');src: url('fonts/proxima-bold/23BAC1_2_0.eot?#iefix') format('embedded-opentype'),url('fonts/proxima-bold/23BAC1_2_0.woff') format('woff'),url('fonts/proxima-bold/23BAC1_2_0.ttf') format('truetype');}
 
 /* Proxima Nova Thin */
 @font-face {font-family: 'ProximaNovaA-Thin';src: url('fonts/proxima-thin/24BA4F_0_0.eot');src: url('fonts/proxima-thin/24BA4F_0_0.eot?#iefix') format('embedded-opentype'),url('fonts/proxima-thin/24BA4F_0_0.woff') format('woff'),url('fonts/proxima-thin/24BA4F_0_0.ttf') format('truetype');}
 @font-face {font-family: 'ProximaNovaS-Thin';src: url('fonts/proxima-thin/24BA4F_1_0.eot');src: url('fonts/proxima-thin/24BA4F_1_0.eot?#iefix') format('embedded-opentype'),url('fonts/proxima-thin/24BA4F_1_0.woff') format('woff'),url('fonts/proxima-thin/24BA4F_1_0.ttf') format('truetype');}
-@font-face {font-family: 'ProximaNovaT-Thin';src: url('fonts/proxima-thin/24BA4F_2_0.eot');src: url('fonts/proxima-thin/24BA4F_2_0.eot?#iefix') format('embedded-opentype'),url('fonts/proxima-thin/24BA4F_2_0.woff') format('woff'),url('fonts/proxima-thin/24BA4F_2_0.ttf') format('truetype');}
+@font-face {font-family: 'ProximaNova-Thin';src: url('fonts/proxima-thin/24BA4F_2_0.eot');src: url('fonts/proxima-thin/24BA4F_2_0.eot?#iefix') format('embedded-opentype'),url('fonts/proxima-thin/24BA4F_2_0.woff') format('woff'),url('fonts/proxima-thin/24BA4F_2_0.ttf') format('truetype');}
 
 
 /*******************************************************************************
@@ -65,10 +65,11 @@ Theme Styles
 
 body {
   box-sizing: border-box;
-  color:#373737;
+  color:#666;
   background-color: #eee;
+  text-align: center;
   font-size: 16px;
-  font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
+  font-family: 'ProximaNova-Thin', Helvetica, Arial, sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
@@ -77,7 +78,6 @@ h1, h2, h3, h4, h5, h6 {
   margin: 10px 0;
   font-weight: 700;
   color:#222222;
-  font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
   letter-spacing: -1px;
 }
 
@@ -112,6 +112,10 @@ h6 {
 
 p {
   margin: 10px 0 15px 0;
+}
+
+strong {
+  font-family: 'ProximaNova-bold';
 }
 
 a {
@@ -177,12 +181,11 @@ Full-Width Styles
 
 #header_wrap {
   background: #212121 url(../images/header_texture.jpg);
-  text-align: center;
 }
 
 #project_tagline {
   color: #fff;
-  font-family: "ProximaNova-Thin";
+  font-family: "ProximaNova-thin";
   font-size: 22px;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
@@ -198,7 +201,7 @@ a.download {
   border-radius: 4px;
   background-color: #60b9b4;
   font-size: 22px;
-  padding: 16px 24px;
+  padding: 10px 24px;
   box-shadow: 0 1px 3px #000, inset 0 1px 0 #a0ede8;
 }
 
