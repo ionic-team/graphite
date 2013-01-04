@@ -66,7 +66,7 @@ Theme Styles
 body {
   box-sizing: border-box;
   color:#373737;
-  background: #212121;
+  background-color: #eee;
   font-size: 16px;
   font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -82,18 +82,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 36px;
-  font-weight: 700;
+  text-indent: -9999px;
+  height: 54px;
+  background: url(../images/graphite_logotype.png) center no-repeat;
 }
 
 h2 {
   padding-bottom: 10px;
   font-size: 32px;
-  background: url('../images/bg_hr.png') repeat-x bottom;
 }
 
 h3 {
-  font-size: 24px;
+  color: #222;
+  text-shadow: 0 1px 0 #FFF;
+  font-size: 36px;
 }
 
 h4 {
@@ -131,7 +133,7 @@ a {
 
 /*******************************************************************************
 Full-Width Styles
-*******************************************************************************/
+ *******************************************************************************/
 
 .outer {
   width: 100%;
@@ -139,7 +141,67 @@ Full-Width Styles
 
 .inner {
   position: relative;
-  max-width: 640px;
+  max-width: 1000px;
   padding: 20px 10px;
   margin: 0 auto;
+}
+
+/* compiled css3-github-ribbon.styl (https://github.com/dciccale/css3-github-ribbon) */
+.github-ribbon {
+  background-color: #60b9b4;
+  top:3.2em;
+  right:-3.7em;
+  -webkit-transform:rotate(45deg);
+  -moz-transform:rotate(45deg);
+  -ms-transform:rotate(45deg);
+  -o-transform:rotate(45deg);
+  transform:rotate(45deg);
+  color:rgba(255,255,255, 1);
+  display:block;
+  padding:.6em 3.5em;
+  position:fixed;
+  font:bold .82em sans-serif;
+  text-align:center;
+  text-decoration:none;
+  text-shadow:1px -1px 8px rgba(0,0,0,0.6);
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  -o-user-select:none;
+  user-select:none
+}
+
+.github-ribbon:hover {
+  background-color: #72cec9;
+}
+
+#header_wrap {
+  background: #212121 url(../images/header_texture.jpg);
+  text-align: center;
+}
+
+#project_tagline {
+  color: #fff;
+  font-family: "ProximaNova-Thin";
+  font-size: 22px;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+
+a {
+  color: #60b9b4;
+}
+
+a.download {
+  display: inline-block;
+  color: #fff;
+  font-family: "ProximaNova-Bold";
+  border-radius: 4px;
+  background-color: #60b9b4;
+  font-size: 22px;
+  padding: 16px 24px;
+  box-shadow: 0 1px 3px #000, inset 0 1px 0 #a0ede8;
+}
+
+a.download:hover {
+  background-color: #72cec9;
 }
