@@ -75,7 +75,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 10px 0;
+  margin: 0 0;
   font-weight: 700;
   color:#222222;
   letter-spacing: -1px;
@@ -207,4 +207,48 @@ a.download {
 
 a.download:hover {
   background-color: #72cec9;
+}
+
+ul.swatches li {
+  display: inline;
+}
+
+ul.swatches input[type="radio"] {
+  display: none;
+}
+
+ul.swatches label {
+  display: inline-block;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,.3);
+  width: 40px;
+  height: 40px;
+  margin: 0 14px;
+}
+
+label.coal { background-color: #222; }
+label.aloe { background-color: #aad315; }
+label.ocean { background-color: #0093ea; }
+label.candy { background-color: #ff6b5f; }
+label.melon { background-color: #f8cb4a; }
+label.mint { background-color: #9ddecc; }
+label.royal { background-color: #c22f1b; }
+label.sand { background-color: #cab092; }
+
+#preview {
+  display: block;
+  position: relative;
+  margin: 30px auto;
+  height: 826px;
+  width: 724px;
+  background: url(../images/phone_frame.jpg) center no-repeat;
+}
+
+#preview iframe {
+  position: absolute;
+  background: white;
+  width: 319px;
+  height: 548px;
+  top: 140px;
+  left: 204px;
 }
