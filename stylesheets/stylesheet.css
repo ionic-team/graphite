@@ -230,9 +230,9 @@ ul.swatches label.selected {
   box-shadow: 0 1px 0 #fff, inset 0 1px 3px rgba(0,0,0,.4);
 }
 
-label.coal { background-color: #222; }
+label.slate { background-color: #222; }
 label.aloe { background-color: #aad315; }
-label.ocean { background-color: #0093ea; }
+label.water { background-color: #0093ea; }
 label.candy { background-color: #ff6b5f; }
 label.melon { background-color: #f8cb4a; }
 label.mint { background-color: #9ddecc; }
