@@ -13,7 +13,7 @@
 /* A
 -----------------------------------------------------------------------------------------------------------*/
 .ui-bar-a {
-	border: 1px solid 		transparent /*{a-bar-border}*/;
+	border: 1px solid 		#005994 /*{a-bar-border}*/;
 	background: 			#0193e9 /*{a-bar-background-color}*/;
 	color: 					#fff /*{a-bar-color}*/;
 	font-weight: bold;
@@ -146,7 +146,7 @@
 /* B
 -----------------------------------------------------------------------------------------------------------*/
 .ui-bar-b {
-	border: 1px solid 		transparent /*{b-bar-border}*/;
+	border: 1px solid 		#005994 /*{b-bar-border}*/;
 	background: 			#0193e9 /*{b-bar-background-color}*/;
 	color: 					#fff /*{b-bar-color}*/;
 	font-weight: bold;
@@ -1104,7 +1104,7 @@ div.ui-mobile-viewport { overflow-x: hidden; }
 .ui-bar, .ui-body { position: relative; padding: .4em 15px; overflow: hidden; display: block; clear:both; }
 .ui-bar { font-size: 16px; margin: 0; }
 .ui-bar h1, .ui-bar h2, .ui-bar h3, .ui-bar h4, .ui-bar h5, .ui-bar h6 { margin: 0; padding: 0; font-size: 16px; display: inline-block; }
-.ui-header, .ui-footer { position: relative; border-left-width: 0; border-right-width: 0; zoom: 1; }
+.ui-header, .ui-footer { position: relative; border-left-width: 0; border-right-width: 0; border-top-width: 0; zoom: 1; }
 .ui-header .ui-btn-left,
 .ui-header .ui-btn-right,
 .ui-footer .ui-btn-left,
