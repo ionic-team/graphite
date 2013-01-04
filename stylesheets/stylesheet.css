@@ -258,6 +258,12 @@ label.sand { background-color: #cab092; }
   overflow: hidden;
 }
 
+hr {
+  border: 0;
+  height: 3px;
+  background: url(../images/divider.png) no-repeat scroll center;
+}
+
 ol.steps {
   margin-top: 20px;
 }
