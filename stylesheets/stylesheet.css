@@ -94,7 +94,6 @@ h2 {
 
 h3 {
   color: #222;
-  text-shadow: 0 1px 0 #FFF;
   font-size: 36px;
 }
 
@@ -172,7 +171,9 @@ Full-Width Styles
   -moz-user-select:none;
   -ms-user-select:none;
   -o-user-select:none;
-  user-select:none
+  user-select:none;
+
+  z-index: 2;
 }
 
 .github-ribbon:hover {
@@ -190,6 +191,10 @@ Full-Width Styles
   font-family: "ProximaNova-thin";
   font-size: 22px;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+
+#main_content {
+  text-shadow: 0 1px 0 #FFF;
 }
 
 a {
@@ -216,9 +221,9 @@ a.download:hover {
 }
 
 p.subtext {
-  margin-top: 0;
-  margin-bottom: 30px;
+  margin: 0 auto 30px auto;
   font-size: 18px;
+  max-width: 900px;
 }
 
 ul.swatches li {
@@ -350,4 +355,10 @@ div.joe img { top: -368px; }
 
 ul.mugs iframe {
   margin: 20px auto;
+}
+
+#footer_wrap {
+  border-top: 1px solid #ddd;
+  background: white;
+  margin-top: 30px;
 }
