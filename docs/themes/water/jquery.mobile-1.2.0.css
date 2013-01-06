@@ -2317,7 +2317,7 @@ span.ui-slider-label-b { z-index: 0; right: 0; text-indent: 1.5em;}
   This theme flips the start and end points for the gradients
 */
 .ui-header > .ui-btn-up-a, .ui-footer > .ui-btn-up-a {
-	border: 1px solid 		#007dcd /*{a-header-bhover-border}*/;
+	border: 1px solid 		#005994 /*{a-header-bhover-border}*/;
 	background: 			#444 /*{a-header-bhover-background-color}*/;
 	font-weight: bold;
 	color: 					#fff /*{a-header-bhover-color}*/;
