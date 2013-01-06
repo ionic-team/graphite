@@ -279,6 +279,7 @@ label.sand { background-color: #cab092; }
   height: 548px;
   top: 140px;
   left: 204px;
+  border-radius: 4px;
   overflow: hidden;
 }
 
@@ -403,5 +404,6 @@ Small screens
   #preview iframe {
     position: static;
     width: 100%;
+    border-radius: 0;
   }
 }
