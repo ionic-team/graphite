@@ -279,6 +279,7 @@ hr {
   border: 0;
   height: 3px;
   background: url(../images/divider.png) no-repeat scroll center;
+  margin: 40px 0;
 }
 
 ol.steps {
