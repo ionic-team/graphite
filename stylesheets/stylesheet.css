@@ -330,7 +330,7 @@ ol.steps h4 {
 }
 
 ul.mugs {
-  width: 900px;
+  max-width: 900px;
   display: block;
   margin: 0 auto;
 }
@@ -363,4 +363,19 @@ ul.mugs iframe {
   border-top: 1px solid #ddd;
   background: white;
   margin-top: 30px;
+}
+
+
+/*******************************************************************************
+Small screens
+*******************************************************************************/
+@media screen and (max-width: 830px) {
+  .stacking li {
+    display: block;
+    width: 100%;
+  }
+
+  .github-ribbon {
+    display: none;
+  }
 }
