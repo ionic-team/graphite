@@ -27,35 +27,24 @@
         <a href="http://jquerymobile.com/">jQuery Mobile</a>
       </h2>
 
-      <section id="downloads">
-      <a class="download" href="#">Download Graphite</a>
-      </section>
+      <section id="actions">
+        <a class="download" href="#">Download Graphite</a>
 
-      <section id="share">
-      <iframe
-        src="http://ghbtns.com/github-btn.html?user=driftyco&amp;repo=graphite&amp;type=watch&amp;count=true"
-        allowtransparency="true" frameborder="0" scrolling="0"
-        width="85px" height="20px"></iframe>
-      <iframe
-        src="http://ghbtns.com/github-btn.html?user=driftyco&amp;repo=graphite&amp;type=fork&amp;count=true"
-        allowtransparency="true" frameborder="0" scrolling="no"
-        width="95px" height="20px"></iframe>
-      <iframe
-        src="https://platform.twitter.com/widgets/tweet_button.html?count=horizontal"
-        allowtransparency="true" frameborder="0" scrolling="no"
-        style="width:95px; height:20px;"></iframe>
-
-      <!-- Place this tag where you want the +1 button to render. -->
-      <div style="width: 63px" class="g-plusone" data-size="medium"></div>
-
-      <!-- Place this tag after the last +1 button tag. -->
-      <script type="text/javascript">
-        (function() {
-         var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-         po.src = 'https://apis.google.com/js/plusone.js';
-         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-         })();
-      </script>
+        <div class="share">
+          <iframe
+            src="http://ghbtns.com/github-btn.html?user=driftyco&amp;repo=graphite&amp;type=watch&amp;count=true"
+            allowtransparency="true" frameborder="0" scrolling="0"
+            width="85px" height="20px"></iframe>
+          <iframe
+            src="http://ghbtns.com/github-btn.html?user=driftyco&amp;repo=graphite&amp;type=fork&amp;count=true"
+            allowtransparency="true" frameborder="0" scrolling="no"
+            width="95px" height="20px"></iframe>
+          <iframe
+            src="https://platform.twitter.com/widgets/tweet_button.html?count=horizontal"
+            allowtransparency="true" frameborder="0" scrolling="no"
+            style="width:95px; height:20px;"></iframe>
+          <div style="width: 63px" class="g-plusone" data-size="medium"></div>
+        </div>
       </section>
       </header>
     </div>
@@ -150,6 +139,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script>
       $(function() {
+        // enable color swatches
         $('input[type="radio"]').click(function() {
           $('#preview iframe').attr('src', 'docs/themes/' + $(this).val() + '/index.html');
           $('ul.swatches label').each(function(idx, elt) {
@@ -160,6 +150,14 @@
             }
           });
         });
+
+        // Load google+ share button
+        var po = document.createElement('script');
+        po.type = 'text/javascript';
+        po.async = true;
+        po.src = 'https://apis.google.com/js/plusone.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(po, s);
       });
     </script>
   </body>

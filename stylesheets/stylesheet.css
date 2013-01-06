@@ -205,7 +205,7 @@ a {
   color: #60b9b4;
 }
 
-#downloads {
+#actions {
   margin: 50px;
 }
 
@@ -218,6 +218,7 @@ a.download {
   background-color: #60b9b4;
   font-size: 22px;
   padding: 10px 24px;
+  margin-bottom: 30px;
   box-shadow: 0 1px 3px #000, inset 0 1px 0 #a0ede8;
 }
 
