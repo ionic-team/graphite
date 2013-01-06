@@ -386,4 +386,14 @@ Small screens
   .github-ribbon {
     display: none;
   }
+
+  #preview {
+    background: none;
+    width: auto;
+    height: auto;
+  }
+  #preview iframe {
+    position: static;
+    width: 100%;
+  }
 }
