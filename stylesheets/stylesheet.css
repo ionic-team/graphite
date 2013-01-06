@@ -348,7 +348,6 @@ div.max img { top: 0; }
 div.ben img { top: -184px; }
 div.joe img { top: -368px; }
 
-a.follow {
-  display: block;
-  text-align: center;
+ul.mugs iframe {
+  margin: 20px auto;
 }
