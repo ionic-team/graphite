@@ -42,7 +42,7 @@
 'a-bhover-color': '#fff'
 'a-header-bhover-background-start': *SECONDARY_COLOR
 'a-header-bhover-background-end': *SECONDARY_COLOR
-'a-header-bhover-border': *BASE_COLOR
+'a-header-bhover-border': *HIGHLIGHT_COLOR
 'a-header-bhover-color': '#fff'
 'a-bdown-background-start': *BASE_COLOR
 'a-bdown-background-end': *BASE_COLOR
