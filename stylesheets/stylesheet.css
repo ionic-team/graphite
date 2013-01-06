@@ -316,3 +316,39 @@ ol.steps h4 {
   font-family: 'ProximaNova-bold';
   vertical-align: top;
 }
+
+ul.mugs {
+  width: 900px;
+  display: block;
+  margin: 0 auto;
+}
+
+ul.mugs li {
+  display: inline-block;
+  width: 33%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+div.portrait {
+  margin: 0 auto;
+  position: relative;
+  width: 184px;
+  height: 184px;
+  overflow: hidden;
+}
+
+div.portrait img {
+  position: absolute;
+  left: 0;
+}
+
+div.max img { top: 0; }
+div.ben img { top: -184px; }
+div.joe img { top: -368px; }
+
+a.follow {
+  display: block;
+  text-align: center;
+}
