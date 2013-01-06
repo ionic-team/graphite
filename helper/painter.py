@@ -38,6 +38,7 @@ def _replace_value(props, matchobj):
 def _RF(css, props):
   keys = '|'.join(props.keys())
   regex = r'(\s*)([^\s]*)(\s*/\*{(%s)}\*/)' % keys
+  print regex
   return re.sub(regex, lambda matchobj: _replace_value(props, matchobj), css)
 
 def make_theme(props, theme_css):

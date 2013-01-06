@@ -1,10 +1,12 @@
 # Meta
 name: water
 'source-theme': 'res/jqm/1.2.0/jquery.mobile-1.2.0.graphite.blue.css'
+'extra-css': 'themes/water.custom.css'
 'jqm-version': '1.2.0'
 
+
 base_color: &BASE_COLOR '#007dcd'
-secondary_color: &SECONDARY_COLOR '#0193e9'
+secondary_color: &SECONDARY_COLOR '#0093EA'
 highlight_border_color: &HIGHLIGHT_COLOR '#005994'
 
 ## Core

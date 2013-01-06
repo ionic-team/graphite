@@ -18,7 +18,8 @@
 'b-bar-background-end': *BASE_COLOR
 'b-bar-background-start': *SECONDARY_COLOR
 'b-bar-background-color': *SECONDARY_COLOR
-
+'a-bar-dropshadow-color': 'rgba(0,0,0,0.15)'
+'a-bar-dropshadow-inset-color': '#4CB1F3'
 
 # Typography
 'c-body-link-color': *BASE_COLOR
@@ -39,6 +40,10 @@
 'a-bhover-background-end': *SECONDARY_COLOR
 'a-bhover-border': *BASE_COLOR
 'a-bhover-color': '#fff'
+'a-header-bhover-background-start': *SECONDARY_COLOR
+'a-header-bhover-background-end': *SECONDARY_COLOR
+'a-header-bhover-border': *BASE_COLOR
+'a-header-bhover-color': '#fff'
 'a-bdown-background-start': *BASE_COLOR
 'a-bdown-background-end': *BASE_COLOR
 'a-bup-color': '#111'
