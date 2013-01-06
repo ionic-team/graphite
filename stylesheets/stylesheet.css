@@ -282,13 +282,19 @@ hr {
   margin: 40px 0;
 }
 
+.stacking li {
+  display: inline-block;
+  width: 33%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 ol.steps {
   margin-top: 20px;
 }
 
 ol.steps li {
-  display: inline-block;
-  width: 33%;
   text-align: justify;
   padding-left: 60px;
   padding-right: 50px;
@@ -330,11 +336,6 @@ ul.mugs {
 }
 
 ul.mugs li {
-  display: inline-block;
-  width: 33%;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
 }
 
 div.portrait {
