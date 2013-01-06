@@ -121,6 +121,7 @@ a {
   text-decoration: none;
   color: #007edf;
   text-shadow: none;
+  font-weight: bold;
 
   transition: color 0.5s ease;
   transition: text-shadow 0.5s ease;
@@ -209,6 +210,7 @@ a.download {
   display: inline-block;
   color: #fff;
   font-family: "ProximaNova-Bold";
+  font-weight: normal;
   border-radius: 4px;
   background-color: #60b9b4;
   font-size: 22px;
@@ -221,6 +223,7 @@ a.download:hover {
 }
 
 p.subtext {
+  color: #444;
   margin: 0 auto 30px auto;
   font-size: 18px;
   max-width: 900px;
@@ -363,6 +366,11 @@ ul.mugs iframe {
   border-top: 1px solid #ddd;
   background: white;
   margin-top: 30px;
+}
+
+footer a {
+  display: inline-block;
+  margin: 0 10px;
 }
 
 
