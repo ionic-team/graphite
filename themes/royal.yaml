@@ -5,4 +5,4 @@ name: royal
 
 base_color: &BASE_COLOR '#9e2417'
 secondary_color: &SECONDARY_COLOR '#c22f1b'
-highlight_border_color: &HIGHLIGHT_COLOR '#005994'
+highlight_border_color: &HIGHLIGHT_COLOR '#490100'

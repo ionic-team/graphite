@@ -13,7 +13,7 @@
 /* A
 -----------------------------------------------------------------------------------------------------------*/
 .ui-bar-a {
-	border: 1px solid 		#005994 /*{a-bar-border}*/;
+	border: 1px solid 		#648100 /*{a-bar-border}*/;
 	background: 			#ff6b5f /*{a-bar-background-color}*/;
 	color: 					#fff /*{a-bar-color}*/;
 	font-weight: bold;
@@ -146,7 +146,7 @@
 /* B
 -----------------------------------------------------------------------------------------------------------*/
 .ui-bar-b {
-	border: 1px solid 		#005994 /*{b-bar-border}*/;
+	border: 1px solid 		#648100 /*{b-bar-border}*/;
 	background: 			#ff6b5f /*{b-bar-background-color}*/;
 	color: 					#fff /*{b-bar-color}*/;
 	font-weight: bold;
@@ -2317,7 +2317,7 @@ span.ui-slider-label-b { z-index: 0; right: 0; text-indent: 1.5em;}
   This theme flips the start and end points for the gradients
 */
 .ui-header > .ui-btn-up-a, .ui-footer > .ui-btn-up-a {
-	border: 1px solid 		#005994 /*{a-header-bhover-border}*/;
+	border: 1px solid 		#648100 /*{a-header-bhover-border}*/;
 	background: 			#444 /*{a-header-bhover-background-color}*/;
 	font-weight: bold;
 	color: 					#fff /*{a-header-bhover-color}*/;
@@ -2357,4 +2357,12 @@ span.ui-slider-label-b.ui-btn-down-c {
 a.ui-btn.ui-slider-handle.ui-btn-hover-c {
   background-image: none;
   background-color: #fff; /*{c-bhover-slider-background}*/
+}
+.ui-li-divider.ui-corner-top {
+  -moz-border-radius-topleft: 0.6em;
+  -webkit-border-top-left-radius: 0.6em;
+  border-top-left-radius: 0.6em;
+  -moz-border-radius-topright: 0.6em;
+  -webkit-border-top-right-radius: 0.6em;
+  border-top-right-radius: 0.6em;
 }

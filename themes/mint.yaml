@@ -5,4 +5,4 @@ name: mint
 
 base_color: &BASE_COLOR '#72c6ae'
 secondary_color: &SECONDARY_COLOR '#9bdecc'
-highlight_border_color: &HIGHLIGHT_COLOR '#005994'
+highlight_border_color: &HIGHLIGHT_COLOR '#259375'
