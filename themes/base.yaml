@@ -19,7 +19,6 @@
 'b-bar-background-start': *SECONDARY_COLOR
 'b-bar-background-color': *SECONDARY_COLOR
 'a-bar-dropshadow-color': 'rgba(0,0,0,0.15)'
-'a-bar-dropshadow-inset-color': '#4CB1F3'
 
 # Typography
 'c-body-link-color': *BASE_COLOR
