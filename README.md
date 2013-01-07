@@ -1,7 +1,9 @@
 Graphite for jQuery Mobile
 ===========
 
-Graphite is a curated set of nice, simple, and clean jQuery Mobile themes based on the _default_ jQM swatches. Comes with a generator script for building your own with a given base color and base highlight color. Since the themes are based on the default swatches, highlight swatches might not match the theme correctly for this release.
+Requires: jQuery Mobile 1.2.0
+
+Graphite is a curated set of nice, simple, and clean jQuery Mobile themes based on the _default_ jQM swatches. It also comes with a generator script for building your own with a given base color and base highlight color. Since the themes are based on the default swatches, highlight swatches might not match the theme correctly for this release.
 
 We've included a modified jQuery Mobile base theme that we use to generate the "Graphite" set of themes. This theme has a few changes made to the default theme.
 
