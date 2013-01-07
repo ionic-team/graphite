@@ -383,7 +383,7 @@ footer a {
 }
 
 .twitter-share-button {
-  width: 95px;
+  width: 95px !important;
 }
 
 
