@@ -5,4 +5,4 @@ name: candy
 
 base_color: &BASE_COLOR '#f75548'
 secondary_color: &SECONDARY_COLOR '#ff6b5f'
-highlight_border_color: &HIGHLIGHT_COLOR '#648100'
+highlight_border_color: &HIGHLIGHT_COLOR '#a9281e'
