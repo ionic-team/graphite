@@ -4,6 +4,7 @@ import pdb
 import shutil
 import sys
 import yaml
+import tinycss
 
 import re
 
@@ -35,7 +36,46 @@ def _replace_value(props, matchobj):
     return ret
     #return r'\g<1>' + v + '\g<3>'
 
+def _remove_css_definitions(css, defs):
+  selector_decl_map = {}
+
+  # Map the selector to the declaration to remove
+  for d in defs:
+    parts = d.split('|')
+    selector_decl_map[parts[0]] = parts[1]
+
+  parser = tinycss.make_parser('page3')
+  sheet = parser.parse_stylesheet(css)
+
+  remove_lines = []
+  for rule in sheet.rules:
+    css_rule = rule.selector.as_css()
+
+    if not (css_rule in selector_decl_map):
+      continue
+
+    # Grab the decl to remove
+    remove_decl = selector_decl_map[css_rule]
+
+    # Grab the decls for this rule
+    decls = rule.declarations
+
+    for d in decls:
+      if d.name == remove_decl:
+        remove_lines.append(d.line)
+
+  css_lines = css.splitlines()
+      
+  pdb.set_trace()
+  for line in remove_lines:
+    del css_lines[line-1]
+
+  return '\n'.join(css_lines)
+
 def _RF(css, props):
+  if 'remove_css' in props:
+    css = _remove_css_definitions(css, props['remove_css'])
+
   keys = '|'.join(props.keys())
   regex = r'(\s*)([^\s]*)(\s*/\*{(%s)}\*/)' % keys
   return re.sub(regex, lambda matchobj: _replace_value(props, matchobj), css)
