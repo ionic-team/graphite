@@ -49,7 +49,7 @@ def _remove_css_definitions(css, defs):
 
   remove_lines = []
   for rule in sheet.rules:
-    css_rule = rule.selector.as_css()
+    css_rule = ' '.join(rule.selector.as_css().split('\n'))
 
     if not (css_rule in selector_decl_map):
       continue
@@ -66,15 +66,14 @@ def _remove_css_definitions(css, defs):
 
   css_lines = css.splitlines()
       
-  pdb.set_trace()
   for line in remove_lines:
     del css_lines[line-1]
 
   return '\n'.join(css_lines)
 
 def _RF(css, props):
-  if 'remove_css' in props:
-    css = _remove_css_definitions(css, props['remove_css'])
+  #if 'remove_css' in props:
+  #  css = _remove_css_definitions(css, props['remove_css'])
 
   keys = '|'.join(props.keys())
   regex = r'(\s*)([^\s]*)(\s*/\*{(%s)}\*/)' % keys

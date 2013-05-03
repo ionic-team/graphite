@@ -1,7 +1,7 @@
 # Core
 
 'jqm-version': '1.3.1'
-'source-theme': 'res/jqm/1.3.1/jquery.mobile-1.3.1.css'
+'source-theme': 'res/jqm/1.3.1/jquery.mobile-1.3.1.graphite.css'
 
 'remove_css':
   - '.ui-bar-a|text-shadow'
@@ -9,6 +9,8 @@
   - '.ui-btn-hover-a|text-shadow'
   - '.ui-btn-down-a|text-shadow'
   - '.ui-bar-b|text-shadow'
+  - '.ui-body-a, .ui-overlay-a|text-shadow'
+  - '.ui-body-c, .ui-overlay-c|text-shadow'
 
 'global-radii-blocks': '0.2em'
 'global-radii-buttons': '0.2em'
@@ -43,9 +45,9 @@
 'global-active-background-end': *BASE_COLOR
 'global-active-border': *SECONDARY_COLOR
 
-'a-bup-border': '#cfcfcf'
-'a-bup-background-start': '#fff'
-'a-bup-background-end': '#fff'
+'a-bup-border': *BASE_COLOR
+'a-bup-background-start': *SECONDARY_COLOR
+'a-bup-background-end': *SECONDARY_COLOR
 'a-bhover-background-start': *SECONDARY_COLOR
 'a-bhover-background-end': *SECONDARY_COLOR
 'a-bhover-border': *BASE_COLOR
@@ -56,7 +58,7 @@
 'a-header-bhover-color': '#fff'
 'a-bdown-background-start': *BASE_COLOR
 'a-bdown-background-end': *BASE_COLOR
-'a-bup-color': '#111'
+'a-bup-color': '#fff'
 'a-bup-shadow-x': '0px'
 'a-bup-shadow-y': '0px'
 'a-bup-shadow-radius': '0px'
