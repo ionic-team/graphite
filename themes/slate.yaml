@@ -1,8 +1,8 @@
 # Meta
 name: slate
-'source-theme': 'res/jqm/1.2.0/jquery.mobile-1.2.0.graphite.blue.css'
+'source-theme': 'res/jqm/1.3.1/jquery.mobile-1.3.1.graphite.css'
 'extra-css': 'themes/slate.custom.css'
-'jqm-version': '1.2.0'
+'jqm-version': '1.3.1'
 'use_base': 'false'
 
 # Core
@@ -54,7 +54,7 @@ name: slate
 'a-header-bhover-color': '#fff'
 'a-bdown-background-start': '#222222'
 'a-bdown-background-end': '#222222'
-'a-bup-color': '#bbb'
+'a-bup-color': '#fff'
 'a-bup-shadow-x': '0px'
 'a-bup-shadow-y': '0px'
 'a-bup-shadow-radius': '0px'
