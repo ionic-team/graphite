@@ -15,7 +15,7 @@
 -----------------------------------------------------------------------------------------------------------*/
 .ui-bar-a {
 	border: 1px solid 		#259375 /*{a-bar-border}*/;
-	background: 			#9bdecc /*{a-bar-background-color}*/;
+	background: 			#72c6ae /*{a-bar-background-color}*/;
 	color: 					#fff /*{a-bar-color}*/;
 	font-weight: bold;
 	background-image: -webkit-gradient(linear, left top, left bottom, from( #9bdecc /*{a-bar-background-start}*/), to( #72c6ae /*{a-bar-background-end}*/)); /* Saf4+, Chrome */
