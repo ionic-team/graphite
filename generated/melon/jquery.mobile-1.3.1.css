@@ -90,7 +90,7 @@
 }
 .ui-btn-up-a {
 	border: 1px solid 		#f8c84a /*{a-bup-border}*/;
-	background: 			#333 /*{a-bup-background-color}*/;
+	background: 			#ffd55f /*{a-bup-background-color}*/;
 	font-weight: bold;
 	color: 					#fff /*{a-bup-color}*/;
 	background-image: -webkit-gradient(linear, left top, left bottom, from( #ffd55f /*{a-bup-background-start}*/), to( #ffd55f /*{a-bup-background-end}*/)); /* Saf4+, Chrome */
@@ -106,7 +106,7 @@
 }
 .ui-btn-hover-a {
 	border: 1px solid 		#f8c84a /*{a-bhover-border}*/;
-	background: 			#444 /*{a-bhover-background-color}*/;
+	background: 			#ffd55f /*{a-bhover-background-color}*/;
 	font-weight: bold;
 	color: 					#fff /*{a-bhover-color}*/;
 	background-image: -webkit-gradient(linear, left top, left bottom, from( #ffd55f /*{a-bhover-background-start}*/), to( #ffd55f /*{a-bhover-background-end}*/)); /* Saf4+, Chrome */
@@ -123,7 +123,7 @@
 }
 .ui-btn-down-a {
 	border: 1px solid 		#000 /*{a-bdown-border}*/;
-	background: 			#222 /*{a-bdown-background-color}*/;
+	background: 			#f8c84a /*{a-bdown-background-color}*/;
 	font-weight: bold;
 	color: 					#fff /*{a-bdown-color}*/;
 	background-image: -webkit-gradient(linear, left top, left bottom, from( #f8c84a /*{a-bdown-background-start}*/), to( #f8c84a /*{a-bdown-background-end}*/)); /* Saf4+, Chrome */
