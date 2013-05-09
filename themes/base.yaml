@@ -68,6 +68,7 @@
 
 'c-bup-background-start': '#fff'
 'c-bup-background-end': '#fff'
+'c-bhover-background-color': *SECONDARY_COLOR
 'c-bhover-background-start': *SECONDARY_COLOR
 'c-bhover-background-end': *SECONDARY_COLOR
 'c-bhover-color': '#fff'

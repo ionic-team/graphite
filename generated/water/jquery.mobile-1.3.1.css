@@ -371,7 +371,7 @@
 }
 .ui-btn-hover-c {
 	border: 1px solid 		#bbb /*{c-bhover-border}*/;
-	background: 			#dfdfdf /*{c-bhover-background-color}*/;
+	background: 			#0093EA /*{c-bhover-background-color}*/;
 	font-weight: bold;
 	color: 					#fff /*{c-bhover-color}*/;
 	background-image: -webkit-gradient(linear, left top, left bottom, from( #0093EA /*{c-bhover-background-start}*/), to( #0093EA /*{c-bhover-background-end}*/)); /* Saf4+, Chrome */
