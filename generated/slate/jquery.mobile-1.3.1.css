@@ -90,7 +90,7 @@
 }
 .ui-btn-up-a {
 	border: 1px solid 		#000000 /*{a-bup-border}*/;
-	background: 			#333 /*{a-bup-background-color}*/;
+	background: 			#333333 /*{a-bup-background-color}*/;
 	font-weight: bold;
 	color: 					#fff /*{a-bup-color}*/;
 	background-image: -webkit-gradient(linear, left top, left bottom, from( #333333 /*{a-bup-background-start}*/), to( #333333 /*{a-bup-background-end}*/)); /* Saf4+, Chrome */
@@ -106,7 +106,7 @@
 }
 .ui-btn-hover-a {
 	border: 1px solid 		#222222 /*{a-bhover-border}*/;
-	background: 			#444 /*{a-bhover-background-color}*/;
+	background: 			#222222 /*{a-bhover-background-color}*/;
 	font-weight: bold;
 	color: 					#fff /*{a-bhover-color}*/;
 	background-image: -webkit-gradient(linear, left top, left bottom, from( #222222 /*{a-bhover-background-start}*/), to( #222222 /*{a-bhover-background-end}*/)); /* Saf4+, Chrome */
@@ -123,7 +123,7 @@
 }
 .ui-btn-down-a {
 	border: 1px solid 		#000 /*{a-bdown-border}*/;
-	background: 			#222 /*{a-bdown-background-color}*/;
+	background: 			#222222 /*{a-bdown-background-color}*/;
 	font-weight: bold;
 	color: 					#fff /*{a-bdown-color}*/;
 	background-image: -webkit-gradient(linear, left top, left bottom, from( #222222 /*{a-bdown-background-start}*/), to( #222222 /*{a-bdown-background-end}*/)); /* Saf4+, Chrome */
@@ -371,7 +371,7 @@
 }
 .ui-btn-hover-c {
 	border: 1px solid 		#bbb /*{c-bhover-border}*/;
-	background: 			#dfdfdf /*{c-bhover-background-color}*/;
+	background: 			#333333 /*{c-bhover-background-color}*/;
 	font-weight: bold;
 	color: 					#fff /*{c-bhover-color}*/;
 	background-image: -webkit-gradient(linear, left top, left bottom, from( #333333 /*{c-bhover-background-start}*/), to( #333333 /*{c-bhover-background-end}*/)); /* Saf4+, Chrome */
@@ -388,7 +388,7 @@
 }
 .ui-btn-down-c {
 	border: 1px solid 		#bbb /*{c-bdown-border}*/;
-	background: 			#d6d6d6 /*{c-bdown-background-color}*/;
+	background: 			#333333 /*{c-bdown-background-color}*/;
 	font-weight: bold;
 	color: 					#727272 /*{c-bdown-color}*/;
 	background-image: -webkit-gradient(linear, left top, left bottom, from( #333333 /*{c-bdown-background-start}*/), to( #333333 /*{c-bdown-background-end}*/)); /* Saf4+, Chrome */

@@ -27,10 +27,10 @@
 'b-bar-border': *HIGHLIGHT_COLOR
 'a-bar-background-end': *BASE_COLOR
 'a-bar-background-start': *SECONDARY_COLOR
-'a-bar-background-color': *SECONDARY_COLOR
+'a-bar-background-color': *BASE_COLOR
 'b-bar-background-end': *BASE_COLOR
 'b-bar-background-start': *SECONDARY_COLOR
-'b-bar-background-color': *SECONDARY_COLOR
+'b-bar-background-color': *BASE_COLOR
 'a-bar-dropshadow-color': 'rgba(0,0,0,0.15)'
 
 # Typography
@@ -46,8 +46,10 @@
 'global-active-border': *SECONDARY_COLOR
 
 'a-bup-border': *BASE_COLOR
+'a-bup-background-color': *SECONDARY_COLOR
 'a-bup-background-start': *SECONDARY_COLOR
 'a-bup-background-end': *SECONDARY_COLOR
+'a-bhover-background-color': *SECONDARY_COLOR
 'a-bhover-background-start': *SECONDARY_COLOR
 'a-bhover-background-end': *SECONDARY_COLOR
 'a-bhover-border': *BASE_COLOR
@@ -56,6 +58,7 @@
 'a-header-bhover-background-end': *SECONDARY_COLOR
 'a-header-bhover-border': *HIGHLIGHT_COLOR
 'a-header-bhover-color': '#fff'
+'a-bdown-background-color': *BASE_COLOR
 'a-bdown-background-start': *BASE_COLOR
 'a-bdown-background-end': *BASE_COLOR
 'a-bup-color': '#fff'
@@ -65,9 +68,11 @@
 
 'c-bup-background-start': '#fff'
 'c-bup-background-end': '#fff'
+'c-bhover-background-color': *SECONDARY_COLOR
 'c-bhover-background-start': *SECONDARY_COLOR
 'c-bhover-background-end': *SECONDARY_COLOR
 'c-bhover-color': '#fff'
+'c-bdown-background-color': *BASE_COLOR
 'c-bdown-background-start': *BASE_COLOR
 'c-bdown-background-end': *BASE_COLOR
 'c-bup-shadow-x': '0px'
