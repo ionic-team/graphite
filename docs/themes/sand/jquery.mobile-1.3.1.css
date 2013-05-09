@@ -148,7 +148,7 @@
 -----------------------------------------------------------------------------------------------------------*/
 .ui-bar-b {
 	border: 1px solid 		#8b6945 /*{b-bar-border}*/;
-	background: 			#cbb294 /*{b-bar-background-color}*/;
+	background: 			#b29573 /*{b-bar-background-color}*/;
 	color: 					#fff /*{b-bar-color}*/;
 	font-weight: bold;
 	background-image: -webkit-gradient(linear, left top, left bottom, from( #cbb294 /*{b-bar-background-start}*/), to( #b29573 /*{b-bar-background-end}*/)); /* Saf4+, Chrome */
@@ -388,7 +388,7 @@
 }
 .ui-btn-down-c {
 	border: 1px solid 		#bbb /*{c-bdown-border}*/;
-	background: 			#d6d6d6 /*{c-bdown-background-color}*/;
+	background: 			#b29573 /*{c-bdown-background-color}*/;
 	font-weight: bold;
 	color: 					#222 /*{c-bdown-color}*/;
 	background-image: -webkit-gradient(linear, left top, left bottom, from( #b29573 /*{c-bdown-background-start}*/), to( #b29573 /*{c-bdown-background-end}*/)); /* Saf4+, Chrome */

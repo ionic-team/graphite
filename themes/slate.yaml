@@ -68,6 +68,7 @@ name: slate
 'c-bhover-background-start': '#333333'
 'c-bhover-background-end': '#333333'
 'c-bhover-color': '#fff'
+'c-bdown-background-color': '#333333'
 'c-bdown-background-start': '#333333'
 'c-bdown-background-end': '#333333'
 'c-bup-shadow-x': '0px'

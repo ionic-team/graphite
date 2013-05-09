@@ -388,7 +388,7 @@
 }
 .ui-btn-down-c {
 	border: 1px solid 		#bbb /*{c-bdown-border}*/;
-	background: 			#d6d6d6 /*{c-bdown-background-color}*/;
+	background: 			#333333 /*{c-bdown-background-color}*/;
 	font-weight: bold;
 	color: 					#727272 /*{c-bdown-color}*/;
 	background-image: -webkit-gradient(linear, left top, left bottom, from( #333333 /*{c-bdown-background-start}*/), to( #333333 /*{c-bdown-background-end}*/)); /* Saf4+, Chrome */

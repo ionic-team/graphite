@@ -30,7 +30,7 @@
 'a-bar-background-color': *BASE_COLOR
 'b-bar-background-end': *BASE_COLOR
 'b-bar-background-start': *SECONDARY_COLOR
-'b-bar-background-color': *SECONDARY_COLOR
+'b-bar-background-color': *BASE_COLOR
 'a-bar-dropshadow-color': 'rgba(0,0,0,0.15)'
 
 # Typography
@@ -72,6 +72,7 @@
 'c-bhover-background-start': *SECONDARY_COLOR
 'c-bhover-background-end': *SECONDARY_COLOR
 'c-bhover-color': '#fff'
+'c-bdown-background-color': *BASE_COLOR
 'c-bdown-background-start': *BASE_COLOR
 'c-bdown-background-end': *BASE_COLOR
 'c-bup-shadow-x': '0px'
