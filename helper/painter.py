@@ -8,7 +8,7 @@ import tinycss
 
 import re
 
-CURRENT_JQM_VERSION = '1.2.0'
+CURRENT_JQM_VERSION = '1.3.2'
 
 DEFAULT_THEME = {
   'a': {
@@ -65,7 +65,7 @@ def _remove_css_definitions(css, defs):
         remove_lines.append(d.line)
 
   css_lines = css.splitlines()
-      
+
   for line in remove_lines:
     del css_lines[line-1]
 
@@ -91,7 +91,7 @@ def make_theme(props, theme_css):
 def save_css(name, theme_css, jqm_version=CURRENT_JQM_VERSION):
   filename = 'generated/%s/jquery.mobile-%s.css' % (name, jqm_version)
   d = os.path.dirname(filename)
-  
+
   if not os.path.exists(d):
     os.makedirs(d)
 

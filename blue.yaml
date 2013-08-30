@@ -1,7 +1,7 @@
 # Meta
 name: blue
-'source-theme': 'res/jqm/1.2.0/jquery.mobile-1.2.0.graphite.blue.css'
-'jqm-version': '1.2.0'
+'source-theme': 'res/jqm/1.3.2/jquery.mobile-1.3.2.graphite.blue.css'
+'jqm-version': '1.3.2'
 
 # Core
 'global-radii-blocks': '0.2em'
